@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MediaPonderada235 {
 
 	public static void main(String[] args) {
+		//Este programa pega tres notas com pesos diferentes (2, 3 e 5) e faz sua media ponderada.
 		try (Scanner sc = new Scanner(System.in)) {
 			
 			System.out.print("Ola. Por favor, insira a primeira nota: \n");

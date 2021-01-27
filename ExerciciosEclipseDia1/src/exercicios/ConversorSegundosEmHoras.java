@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ConversorSegundosEmHoras {
 
 	public static void main(String[] args) {
-		//Esse programa lê a quantidade de segundos e os converte em horas, minutos e segundos
+		//Esse programa lê a quantidade de segundos e os converte em horas, minutos e segundos.
 		try (Scanner sc = new Scanner(System.in)) {
 		System.out.println("Por favor, insira a quantidade de segundos:");
 		double segundos = sc.nextDouble();

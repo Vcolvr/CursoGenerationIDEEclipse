@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CustoDoCarro {
 
 	public static void main(String[] args) {
-		//Esse programa faz o calculo do preco de um carro somando as porcentagens de impostos e do distribuidor
+		//Esse programa faz o calculo do preco de um carro somando as porcentagens de impostos e do distribuidor.
 		
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.println("Saudacoes. Qual eh o preco do carro?");

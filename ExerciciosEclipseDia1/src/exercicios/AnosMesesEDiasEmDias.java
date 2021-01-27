@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AnosMesesEDiasEmDias {
 	
 		public static void main(String[] args) {
-			//Esse programa lê a idade em anos, meses e dias e os converte para dias
+			//Esse programa lê a idade em anos, meses e dias e os converte para dias.
 			Scanner sc = new Scanner(System.in);
 			
 			System.out.println("Preciso que você me informe sua idade em anos, meses e dias");

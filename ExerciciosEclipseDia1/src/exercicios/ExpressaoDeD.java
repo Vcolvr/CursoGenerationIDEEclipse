@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ExpressaoDeD {
 
 	public static void main(String[] args) {
-		//Este programa le 3 variaveis e executa um sistema D = (R + S) / 2 onde R = (a+b)² e S é (b+c)²
+		//Este programa le 3 variaveis e executa um sistema D = (R + S) / 2 onde R = (a+b)² e S é (b+c)².
 		
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.println("Para executar o programa, preciso de tres variaveis");

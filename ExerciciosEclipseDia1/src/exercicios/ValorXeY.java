@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ValorXeY {
 
 	public static void main(String[] args) {
+		//Este programa resolve um sistema de equacoes
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.print("Esse programa resolve o sistema \nax + by = c \ndx + ey = f");
 			System.out.print("\nPara isso preciso de 6 variaveis\n");
