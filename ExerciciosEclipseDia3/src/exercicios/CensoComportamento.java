@@ -11,7 +11,7 @@ public class CensoComportamento {
 			int idade = 0;
 			int genero = 0;
 			int comportamento = 0;
-			int pessoas = 0;
+			int pessoas = 1;
 			int calmosGeral = 0;
 			int nervosasMulheres = 0;
 			int agressivosHomens = 0;
