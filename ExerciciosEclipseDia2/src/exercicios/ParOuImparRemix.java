@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ParOuImparRemix {
 
 	public static void main(String[] args) {
-		//Esse programa le se o numero eh par ou impar e faz seu quadrado ou sua raiz, respectivamente.
+		//Este programa le se o numero eh par ou impar e faz seu quadrado ou sua raiz, respectivamente.
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.println("Por favor, insira um numero: ");
 			double numero = sc.nextDouble();

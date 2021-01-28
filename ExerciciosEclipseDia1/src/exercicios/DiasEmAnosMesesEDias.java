@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DiasEmAnosMesesEDias {
 
 	public static void main(String[] args) {
-		//Esse programa converte os dias vividos em anos meses e dias.
+		//Este programa converte os dias vividos em anos meses e dias.
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Quantos dias você viveu?");

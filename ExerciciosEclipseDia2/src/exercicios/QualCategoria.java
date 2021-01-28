@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class QualCategoria {
 
 	public static void main(String[] args) {
-		//Esse programa le uma idade e coloca a pessoa dentro de uma categoria por idade.
+		//Este programa le uma idade e coloca a pessoa dentro de uma categoria por idade.
 				try (Scanner sc = new Scanner(System.in)) {
 					System.out.println("Insira sua idade para sabermos em que categoria voce esta: ");
 					int idade = sc.nextInt();

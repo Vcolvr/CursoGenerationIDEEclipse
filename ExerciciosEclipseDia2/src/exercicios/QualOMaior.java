@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class QualOMaior {
 
 	public static void main(String[] args) {
-		//Esse programa le tres variaveis e diz qual eh o maior.
+		//Este programa le tres variaveis e diz qual eh o maior.
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.println("Vou comparar tres variaveis e ver qual a maior: ");
 			System.out.println("Por favor, insira a primeira variavel: ");

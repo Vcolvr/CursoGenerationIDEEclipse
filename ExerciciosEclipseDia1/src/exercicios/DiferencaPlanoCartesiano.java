@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DiferencaPlanoCartesiano {
 
 	public static void main(String[] args) {
-		//Esse programa calcula a distancia entre dois pontos no plano cartesiano.
+		//Este programa calcula a distancia entre dois pontos no plano cartesiano.
 		
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.println("Ola. Para realizar os calculos preciso das coordenadas de A e B");
