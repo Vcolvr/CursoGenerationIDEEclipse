@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class LerAte0 {
 
 	public static void main(String[] args) {
+		//Este programa continua lendo numeros ate que seja escrito um zero.
 		try (Scanner sc = new Scanner(System.in)) {
 			int numero = 0;
 			int soma = 0;
