@@ -54,7 +54,7 @@ public class DadoDezVezes {
 				break;
 				
 			default:
-				System.out.println("Por favor, reinicie o programa.");
+				System.out.println("Obrigado. Para usar novamente, reinicie o programa.");
 				System.exit(0);
 			}
 			
@@ -63,25 +63,25 @@ public class DadoDezVezes {
 					seis++;
 				}
 				if(vect[i] == maior) {
-					System.out.println("Vetor [" + i + "] = " + String.format("%.2f", vect[i])
+					System.out.println("Vetor [" + i + "] = " + String.format("%.0f", vect[i])
 					+ " ---> Maior Valor!");
 					quantidadeMaior++;
 				}
 				else {
-					System.out.println("Vetor [" + i + "] = " + String.format("%.2f", vect[i]));
+					System.out.println("Vetor [" + i + "] = " + String.format("%.0f", vect[i]));
 				}
 			}
 			double media = soma / 10;
 			System.out.println("A media dos valores foi de " + media + ".");
 			
-			System.out.println("O maior valor possivel no dado (seis) apareceu " + seis + " vez(es).");
+			System.out.println("O maior valor possivel no dado (seis) apareceu "
+								+ String.format("%.0f", seis) + " vez(es).");
 
 			if(seis == 0) {
 				System.out.println("O maior valor nesse conjunto de dados aconteceu " 
-						+ quantidadeMaior + " vez(es)."
-						+ "O valor em questao foi " + maior);
-				
-			}
+									+ quantidadeMaior + " vez(es)."
+									+ "O valor em questao foi " + maior + ".");
+			}	
 		}catch(Exception e) {
 			System.out.println("Desculpe, o valor inserido nao eh permitido.");
 		}

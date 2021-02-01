@@ -28,6 +28,7 @@ public class MaiorPontuacaoVetor {
 				}
 			}
 		sc.close();
+
 		}catch(Exception e) {
 			System.out.println("Desculpe, o valor inserido nao eh permitido.");
 		}
