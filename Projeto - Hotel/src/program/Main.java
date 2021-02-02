@@ -202,7 +202,7 @@ public class Main {
 		System.out.println("Todos os quartos estão ocupados");
 		sc.close();
 		}catch(Exception e) {
-			System.out.println("Desculpe, o valor inserido nao eh permitido.");
+			System.out.println("Desculpe, o valor inserido não é permitido.");
 		}
 	}
 }
