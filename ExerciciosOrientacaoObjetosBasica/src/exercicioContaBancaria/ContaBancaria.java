@@ -6,13 +6,14 @@ public class ContaBancaria {
 	private String nomeDoDono;
 	private double saldo;
 
-	public void Clientes(int numeroDaConta, String nomeDoDono, double saldoInicial) {
+	public ContaBancaria(int numeroDaConta, String nomeDoDono, double saldo) {
 		this.numeroDaConta = numeroDaConta;
 		this.nomeDoDono = nomeDoDono;
-		deposito(saldoInicial);
+		this.saldo = saldo;
 	}
+	
 
-	public void Clientes(int numeroDaConta, String nomeDoDono) {
+	public ContaBancaria(int numeroDaConta, String nomeDoDono) {
 		this.numeroDaConta = numeroDaConta;
 		this.nomeDoDono = nomeDoDono;
 	}
