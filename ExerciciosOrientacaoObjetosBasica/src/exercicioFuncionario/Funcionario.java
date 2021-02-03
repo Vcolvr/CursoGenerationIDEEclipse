@@ -48,7 +48,7 @@ public class Funcionario {
 	}
 	
 	public double aumentarSalario(double porcentagem) {
-		return salario() * (0.1 * porcentagem);
+		return salario() * (0.01 * porcentagem);
 	}
 
 	@Override
