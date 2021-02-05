@@ -41,7 +41,7 @@ public class DadoDezVezes {
 				
 			case 2:
 				for(int i = 0; i < 10; i++) {
-					vect[i] = (int)(Math.random()*6+1);
+					vect[i] = (int)(Math.random()*6.0+(1.0));
 					soma = soma + vect[i];
 					if(i == 0) {
 						maior = vect[i];

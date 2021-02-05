@@ -92,6 +92,7 @@ public class Programa {
 
 								} else {
 									aux = 1;
+									System.out.println("Você não selecionou nenhuma classe de relação.");
 								}
 							}
 						}
