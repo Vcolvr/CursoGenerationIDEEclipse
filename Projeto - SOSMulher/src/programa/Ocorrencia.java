@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Ocorrencia {
-	SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy hh:mm");
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy HH:mm");
 	//Switcher, que transforma 1 ou 2 em emergencial e não emergencial
 	private Integer numeroDeOcorrencia;
 	private String opcaoDaOcorrencia;
@@ -45,8 +45,8 @@ public class Ocorrencia {
 
 	@Override
 	public String toString() {
-		return "Ocorrencia: #" + numeroDeOcorrencia + "\nTipo de Ocorrência: " + opcaoDaOcorrencia
-				+ "MomentoDaOcorrencia: " + sdf.format(momentoDaOcorrencia);
+		return "Ocorrência #" + numeroDeOcorrencia + ":\nTipo de Ocorrência - " + opcaoDaOcorrencia
+				+ "\nMomento da ocorrência - " + sdf.format(momentoDaOcorrencia);
 	}
 	
 	//public File preOcorrencia() {

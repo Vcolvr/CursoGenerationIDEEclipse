@@ -108,7 +108,7 @@ public class Mulher {
 	}
 	
 	public boolean validaCpf() {
-		if(getCPF().length()<11 || getCPF().length()>11) {
+		if (getCPF().length() != 11) {
 			return false;
 		}
 		else {
@@ -134,9 +134,16 @@ public class Mulher {
 
 	@Override
 	public String toString() {
-		return "Nome:" + nome + "\nIdade: " + idade + "\nCPF: " + CPF + "\nEndereco: " + endereco + "\nTelefone: "
+		return "Nome: " + nome + "\nIdade: " + idade + "\nCPF: " + CPF + "\nEndereco: " + endereco + "\nTelefone: "
 				+ telefone + "\nEmail: " + email;
 	}
 	
+	public void toString2() {
+		System.out.println("Nome: " + nome + "\nIdade: " + idade + "\nCPF: " + CPF + "\nEndereco: " + endereco + "\nTelefone: "
+				+ telefone + "\nEmail: " + email);
+		for(Ocorrencia e: ocorrencias) {
+			System.out.println(e);
+		}
+	}
 	
 }
