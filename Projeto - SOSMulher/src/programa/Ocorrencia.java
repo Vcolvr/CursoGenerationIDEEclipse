@@ -42,9 +42,15 @@ public class Ocorrencia {
 	public void setMomentoDaOcorrencia(Date momentoDaOcorrencia) {
 		this.momentoDaOcorrencia = momentoDaOcorrencia;
 	}
+
+	@Override
+	public String toString() {
+		return "Ocorrencia: #" + numeroDeOcorrencia + "\nTipo de Ocorrência: " + opcaoDaOcorrencia
+				+ "MomentoDaOcorrencia: " + sdf.format(momentoDaOcorrencia);
+	}
 	
 	//public File preOcorrencia() {
 	//}
 	
-
+	
 }

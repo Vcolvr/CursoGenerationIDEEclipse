@@ -85,7 +85,8 @@ public class Programa {
 		}
 		
 		for(Animal e : animais) {
-			System.out.println(e.getNome() + ": " + e.somAnimal() + "\nVamos ver se elu se move!");
+			System.out.println(e.getNome() + ": " + e.somAnimal()
+			+ "\nVamos ver se elu se move!");
 			try {
 				TimeUnit.SECONDS.sleep(2);
 			} catch (InterruptedException j) {

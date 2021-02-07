@@ -106,7 +106,16 @@ public class Mulher {
 	public void setCPF(String CPF) {
 		this.CPF = CPF;
 	}
-
+	
+	public boolean validaCpf() {
+		if(getCPF().length()<11 || getCPF().length()>11) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+	
 	public void adicionarOcorrencia(Ocorrencia ocorrencia) {
 		ocorrencias.add(ocorrencia);
 	}
@@ -122,4 +131,12 @@ public class Mulher {
 	public void removerPessoaProxima(PessoaProxima pessoa) {
 		pessoas.remove(pessoa);
 	}
+
+	@Override
+	public String toString() {
+		return "Nome:" + nome + "\nIdade: " + idade + "\nCPF: " + CPF + "\nEndereco: " + endereco + "\nTelefone: "
+				+ telefone + "\nEmail: " + email;
+	}
+	
+	
 }

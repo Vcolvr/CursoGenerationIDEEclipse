@@ -13,6 +13,12 @@ public class Delegacia extends Comunicacoes{
 		this.bairro = bairro;
 	}
 
+	public Delegacia(String nome, String email, int dP, String bairro) {
+		super(nome, email);
+		this.DP = dP;
+		this.bairro = bairro;
+	}
+
 	public int getDP() {
 		return DP;
 	}
@@ -31,7 +37,7 @@ public class Delegacia extends Comunicacoes{
 
 	@Override
 	public String contato() {
-		return "";
+		return "A policia do DPº" + DP + " chegará em " + (int)(Math.random()*20.0+(5.0)) + " minutos!";
 	}
 
 }
