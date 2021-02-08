@@ -24,14 +24,16 @@ public class RedesDeApoio extends Comunicacoes {
 	@Override
 	public String contato() {
 		if (tipoDeAcolhimento.equals("Psicológico")) {
-			return "Sua solicitação de auxilio psicológico será respondida em até 3 dias úteis.";
+			return "Sua solicitação de auxilio psicológico será respondida em até 3 dias úteis."
+					+ "O(a) " + nome + " prestará o maior auxílio possível para você";
 		}
 		else if (tipoDeAcolhimento.equals("Jurídico")) {
 			return "Sua solicitação de auxilio jurídico será respondida em até 3 dias úteis."
 					+ "\nA Casa das Advogadas não deixa nenhuma mulher na mão.";
 		}
 		else {
-			return "Sua solicitação de auxilio psicológico e jurídico será respondida em até 3 dias úteis. ";
+			return "Sua solicitação de auxilio psicológico e jurídico será respondida em até 3 dias úteis."
+		+   "\nO(a) " + nome + " prestará o maior auxílio possível para você";
 		}
 	}
 

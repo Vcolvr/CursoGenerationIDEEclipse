@@ -1,8 +1,8 @@
 package programa;
 
 public abstract class Comunicacoes {
-	private String nome;
-	private String email;
+	protected String nome;
+	protected String email;
 	
 	public Comunicacoes() {
 	}
