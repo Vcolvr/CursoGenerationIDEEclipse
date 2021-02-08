@@ -2,8 +2,8 @@ package programa;
 
 public class Delegacia extends Comunicacoes{
 	//Fazer as delegacias da mulher, tentar achar elas pelo bairro e se não acontecer, gerar uma aleatoriamente.
-	public int DP;
-	public String bairro;
+	private int DP;
+	private String bairro;
 	
 	public Delegacia() {
 	}

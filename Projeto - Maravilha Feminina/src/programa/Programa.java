@@ -131,6 +131,11 @@ public class Programa {
 				sc.nextLine();
 				String delito = sc.nextLine();
 				System.out.println("Entraremos em contato em breve para te orientar.");
+				try {
+					Thread.sleep(2700);
+				} catch (InterruptedException ex) {
+					Thread.currentThread().interrupt();
+				}
 				Date momento = new Date();
 				Ocorrencia ocorrenciaTipo2 = new Ocorrencia(numeroDaOcorrencia, delito, momento);
 				mulher.adicionarOcorrencia(ocorrenciaTipo2);
@@ -160,9 +165,9 @@ public class Programa {
 
 			case 4:
 				mulher.toString2();
-				System.out.println("Boa sorte. Estamos com você.");
 				break;
 			}
+			System.out.println("... E seja protagonista de um final feliz.");
 		}
 		sc.close();
 	}

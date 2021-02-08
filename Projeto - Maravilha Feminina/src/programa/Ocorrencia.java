@@ -5,12 +5,9 @@ import java.util.Date;
 
 public class Ocorrencia {
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy HH:mm");
-	//Switcher, que transforma 1 ou 2 em emergencial e não emergencial
 	private Integer numeroDeOcorrencia;
 	private String opcaoDaOcorrencia;
 	private Date momentoDaOcorrencia;
-	//Se pá tentar gerar um arquivo de pré-boletim;
-	//private String pré documento (método);
 	
 	public Ocorrencia(Integer numeroDeOcorrencia, String opcaoDaOcorrencia, Date momentoDaOcorrencia) {
 		super();
