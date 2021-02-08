@@ -42,7 +42,7 @@ public class Programa {
 			telefone = sc.next();
 			System.out.println("\nQual é o seu email?");
 			email = sc.next();
-			System.out.println("\nNome:" + nome + "\nIdade: " + idade + "\nCPF: " + CPF + "\nEndereco: " + endereco
+			System.out.println("\nNome: " + nome + "\nIdade: " + idade + "\nCPF: " + CPF + "\nEndereco: " + endereco
 					+ "\nTelefone: " + telefone + "\nEmail: " + email);
 
 			System.out.println("\nOs seus dados estão corretos? (S/N)");
