@@ -147,7 +147,8 @@ public class Programa {
 
 			case 3:
 				System.out.println();
-				System.out.println("Precisa de apoio psicológico ou jurídico? (P/J/PJ)");
+				System.out.println("Precisa de apoio psicológico ou jurídico?"
+						+ "\nP  psicológico// J - Jurídico// A-Ambos");
 				char psiOuJur = sc.next().charAt(0);
 				sc.nextLine();
 				if (psiOuJur == 'p' || psiOuJur == 'P') {
@@ -167,8 +168,8 @@ public class Programa {
 				mulher.toString2();
 				break;
 			}
-			System.out.println("... E seja protagonista de um final feliz.");
 		}
+		System.out.println(" ... E seja protagonista de um final feliz.");
 		sc.close();
 	}
 }
