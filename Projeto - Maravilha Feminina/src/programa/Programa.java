@@ -148,7 +148,7 @@ public class Programa {
 			case 3:
 				System.out.println();
 				System.out.println("Precisa de apoio psicológico ou jurídico?"
-						+ "\nP  psicológico// J - Jurídico// A-Ambos");
+						+ "\nP - Psicológico// J - Jurídico// A - Ambos");
 				char psiOuJur = sc.next().charAt(0);
 				sc.nextLine();
 				if (psiOuJur == 'p' || psiOuJur == 'P') {

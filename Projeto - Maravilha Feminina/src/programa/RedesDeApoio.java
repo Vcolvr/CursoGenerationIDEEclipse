@@ -25,7 +25,7 @@ public class RedesDeApoio extends Comunicacoes {
 	public String contato() {
 		if (tipoDeAcolhimento.equals("Psicológico")) {
 			return "Sua solicitação de auxilio psicológico será respondida em até 3 dias úteis."
-					+ "O(a) " + nome + " prestará o maior auxílio possível para você";
+					+ "\nO(a) " + nome + " prestará o maior auxílio possível para você";
 		}
 		else if (tipoDeAcolhimento.equals("Jurídico")) {
 			return "Sua solicitação de auxilio jurídico será respondida em até 3 dias úteis."
