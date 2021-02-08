@@ -22,7 +22,7 @@ public class Programa {
 		Scanner sc = new Scanner(System.in);
 
 		do {
-			System.out.println("Bem-vinda ao SOS Mulher.\nA sua segurança é a nossa prioridade.");
+			System.out.println("Bem-vinda ao Maravilha Feminina.\nA sua segurança é a nossa prioridade.");
 			System.out.println("\nInsira seus dados: \nQual é o seu nome?");
 			nome = sc.nextLine();
 			System.out.println("\nQual é a sua idade?");
@@ -123,6 +123,7 @@ public class Programa {
 				System.out.println();
 				System.out.println(mulher);
 				System.out.println(ocorrencia);
+				System.out.println("Estamos ligando para a sua pessoa de confiança.");
 				break;
 
 			case 2:
