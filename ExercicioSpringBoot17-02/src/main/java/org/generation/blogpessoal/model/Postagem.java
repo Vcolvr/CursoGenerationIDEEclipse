@@ -22,7 +22,7 @@ public class Postagem {
 	
 	@NotNull
 	@Size(min = 5, max = 100)
-	private String tituloString;
+	private String titulo;
 	
 	@NotNull
 	@Size(min = 5, max = 500)
@@ -32,13 +32,11 @@ public class Postagem {
 	private Date data = new java.sql.Date(System.currentTimeMillis());
 	
 	public Postagem() {
-		super();
 	}
 
-	public Postagem(long id, String tituloString, String texto, Date data) {
-		super();
+	public Postagem(long id, String titulo, String texto, Date data) {
 		this.id = id;
-		this.tituloString = tituloString;
+		this.titulo = titulo;
 		this.texto = texto;
 		this.data = data;
 	}
@@ -51,12 +49,12 @@ public class Postagem {
 		this.id = id;
 	}
 
-	public String getTituloString() {
-		return tituloString;
+	public String getTitulo() {
+		return titulo;
 	}
 
-	public void setTituloString(String tituloString) {
-		this.tituloString = tituloString;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
 	public String getTexto() {
@@ -74,10 +72,5 @@ public class Postagem {
 	public void setData(Date data) {
 		this.data = data;
 	}
-	
-	
-	
-	
-	
 
 }
