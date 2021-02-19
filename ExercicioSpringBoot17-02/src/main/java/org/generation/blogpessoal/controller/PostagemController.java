@@ -2,6 +2,8 @@ package org.generation.blogpessoal.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.generation.blogpessoal.model.Postagem;
 import org.generation.blogpessoal.repository.PostagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,34 +26,33 @@ public class PostagemController {
 
 	@Autowired
 	private PostagemRepository repository;
-	
+
 	@GetMapping
 	public ResponseEntity<List<Postagem>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
-	
+
 	@GetMapping("/{id}")
 	public ResponseEntity<Postagem> GetById(@PathVariable long id) {
-		return repository.findById(id)
-				.map(resp -> ResponseEntity.ok(resp))
-				.orElse(ResponseEntity.notFound().build());
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
-	
-	@GetMapping ("/titulo/{titulo}")
+
+	@GetMapping("/titulo/{titulo}")
 	public ResponseEntity<List<Postagem>> GetByTitulo(@PathVariable String titulo) {
 		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
 	}
 	
-	@PostMapping 
-	public ResponseEntity<Postagem> post (@RequestBody Postagem postagem) {
+	//O valid permite que você valide as informações e retorne com mensagens para o usuário.
+	@PostMapping
+	public ResponseEntity<Postagem> post(@Valid @RequestBody Postagem postagem) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(postagem));
 	}
-	
-	@PutMapping 
-	public ResponseEntity<Postagem> put (@RequestBody Postagem postagem) {
+
+	@PutMapping
+	public ResponseEntity<Postagem> put(@RequestBody Postagem postagem) {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(postagem));
 	}
-	
+
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable long id) {
 		repository.deleteById(id);
