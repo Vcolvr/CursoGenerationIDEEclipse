@@ -9,7 +9,7 @@ import com.exercicioFarmacia.ExercicioFarmaciaCarvalho.model.Categoria;
 
 @Repository
 
-public interface CategoriaRepository  extends JpaRepository<Categoria, Long>{
+public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 
-	public List <Categoria> findAllByDepartamentoContainingIgnoreCase (String departamento);
+	public List<Categoria> findAllByDepartamentoContainingIgnoreCase (String departamento);
 }

@@ -8,13 +8,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_tema")
+
 public class Tema {
 
 	@Id
@@ -24,7 +23,6 @@ public class Tema {
 	@NotNull
 	private String descricao;
 	
-	//Mapeado pelo tema da tabela em postagem e cascade por causa do relacionamento entre as tabelas (em cascata)
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagens;
@@ -60,6 +58,5 @@ public class Tema {
 	public void setPostagens(List<Postagem> postagens) {
 		this.postagens = postagens;
 	} 
-	
 	
 }
