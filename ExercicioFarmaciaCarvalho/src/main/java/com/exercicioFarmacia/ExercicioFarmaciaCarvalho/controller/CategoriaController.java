@@ -29,27 +29,27 @@ public class CategoriaController {
 	private CategoriaRepository categoriaRepository;
 	
 	@GetMapping
-	public ResponseEntity<List<Categoria>> GetAll() {
+	public ResponseEntity<List<Categoria>> getAll() {
 		return ResponseEntity.ok(categoriaRepository.findAll());
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Categoria> GetById(@PathVariable long id) {
+	public ResponseEntity<Categoria> getById(@PathVariable long id) {
 		return categoriaRepository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 
 	@GetMapping("/categoria/{departamento}")
-	public ResponseEntity<List<Categoria>> GetByDepartamento(@PathVariable String departamento) {
+	public ResponseEntity<List<Categoria>> getByDepartamento(@PathVariable String departamento) {
 		return ResponseEntity.ok(categoriaRepository.findAllByDepartamentoContainingIgnoreCase(departamento));
 	}
 	
 	@PostMapping
-	public ResponseEntity<Categoria> Post (@Valid @RequestBody Categoria categoria) {
+	public ResponseEntity<Categoria> post(@Valid @RequestBody Categoria categoria) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(categoriaRepository.save(categoria));
 	}
 
 	@PutMapping
-	public ResponseEntity<Categoria> Put (@RequestBody Categoria categoria) {
+	public ResponseEntity<Categoria> put(@RequestBody Categoria categoria) {
 		return ResponseEntity.status(HttpStatus.OK).body(categoriaRepository.save(categoria));
 	}
 

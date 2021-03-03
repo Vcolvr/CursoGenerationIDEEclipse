@@ -29,17 +29,17 @@ public class UsuarioController {
 	private UsuarioRepository usuarioRepository;
 
 	@GetMapping
-	public ResponseEntity<List<Usuario>> GetAll() {
+	public ResponseEntity<List<Usuario>> getAll() {
 		return ResponseEntity.ok(usuarioRepository.findAll());
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity<Usuario> GetById(@PathVariable long id) {
+	public ResponseEntity<Usuario> getById(@PathVariable long id) {
 		return usuarioRepository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 
 	@GetMapping("/usuario/{nomeUsuario}")
-	public ResponseEntity<List<Usuario>> GetByNomeUsuario(@PathVariable String nomeUsuario) {
+	public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario) {
 		return ResponseEntity.ok(usuarioRepository.findAllByNomeUsuarioContainingIgnoreCase(nomeUsuario));
 	}
 	
