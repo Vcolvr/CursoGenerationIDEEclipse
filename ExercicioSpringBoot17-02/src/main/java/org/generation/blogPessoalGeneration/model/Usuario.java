@@ -1,4 +1,4 @@
-package org.generation.blogpessoal.model;
+package org.generation.blogPessoalGeneration.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,6 +24,16 @@ public class Usuario {
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String senha;
+
+	public Usuario(Long idUsuario,  String nome, String usuario, String senha) {
+		this.idUsuario = idUsuario;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+
+	public Usuario() {
+	}
 
 	public Long getIdUsuario() {
 		return idUsuario;

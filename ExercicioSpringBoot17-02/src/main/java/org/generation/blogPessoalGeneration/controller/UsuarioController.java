@@ -1,10 +1,10 @@
-package org.generation.blogpessoal.controller;
+package org.generation.blogPessoalGeneration.controller;
 
 import java.util.Optional;
 
-import org.generation.blogpessoal.model.Usuario;
-import org.generation.blogpessoal.model.UsuarioLogin;
-import org.generation.blogpessoal.service.UsuarioService;
+import org.generation.blogPessoalGeneration.model.Usuario;
+import org.generation.blogPessoalGeneration.model.UsuarioLogin;
+import org.generation.blogPessoalGeneration.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/usuario")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 	
